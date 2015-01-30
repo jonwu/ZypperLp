@@ -1,4 +1,7 @@
+// initialise the helper object with the code, secret code and the
+// generic helper
 var helper = new CBHelper("zypper-landing-page", "5e313b752f970c957931b916fb03f87e", new GenericHelper());
+// use the md5 library provided to set the password
 helper.setPassword(hex_md5("haowu123"));
 
 jQuery(document).ready(function($) {
@@ -12,13 +15,16 @@ jQuery(document).ready(function($) {
     var email = $('.email_footer').val()
     insertEmail(email)
   });
+
 });
 
 function insertEmail(email) {
   if (email) {
     var dataObject = { "email" : email };
     helper.insertDocument("emails", dataObject, null, function(resp) {
-      // update animation for front end
+      if (resp["outputData"] == "Inserted") {
+        alert("Thank you for registering!")
+      }
     });
   }
 }
