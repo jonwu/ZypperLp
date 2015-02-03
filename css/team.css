@@ -1,0 +1,42 @@
+/*.content{
+	height: 650px;
+	width: 100%;
+	background-color: gray;
+}
+*/
+.content{
+	/*background-color: #ecf0f1;*/
+	
+	padding-bottom: 100px;
+	width: 100%;
+}
+
+
+
+.content .box{
+	margin-top: 100px;
+	line-height: 24px;
+
+	height: 200px;
+}
+.content .box p{
+	font-size: 16px;
+	letter-spacing: .4px;
+
+}
+.content .box h1{
+	font-weight: 400
+}
+.content .left .inverse{
+	/*text-align: left;*/
+	/*padding-left: 30px;*/
+	text-align: center;
+}
+.content .right .inverse{
+	/*background-color: black;*/
+	text-align: center;
+}
+.content .box img{
+	height: 100%;
+
+} 
