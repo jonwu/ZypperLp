@@ -31,7 +31,7 @@ function insertEmail(email) {
         // $('.join').fadeOut('1500', function() {
           
         // });
-          alert("Thanks for joining!");
+          alert("Stay Tuned.. It's Going To Be Big.");
         
       }
 
